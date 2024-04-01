@@ -1,6 +1,8 @@
+import { ADD_INGREDIENT } from '../constants/actionTypes';
+
 const ingredientReducer = (state = [], { type, payload }) => {
   switch (type) {
-    case 'ADD_INGREDIENT':
+    case ADD_INGREDIENT:
       return [
         ...state,
         {
